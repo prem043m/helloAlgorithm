@@ -1,5 +1,8 @@
-public class FloodFillDFS {
+public final class FloodFillDFS {
 
+    private FloodFillDFS() {
+        // Utility class; prevent instantiation.
+    }
     public static void main(String[] args) {
         int[][] image = {
             {1, 1, 1},
