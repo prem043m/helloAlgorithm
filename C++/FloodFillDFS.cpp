@@ -12,7 +12,7 @@ public:
 
     void dfs(vector<vector<int>>& image, int r, int c, int oldColor, int newColor) {
         // Boundary check
-        if (r < 0 || c < 0 || r >= image.size() || c >= image[0].size())
+        if (r < 0 || c < 0 || r >= static_cast<int>(image.size()) || c >= static_cast<int>(image[0].size()))
             return;
 
         // Stop if color does not match
